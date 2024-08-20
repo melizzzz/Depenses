@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}{{ data.mois }}{% endblock %}
+
+{% block content %}
+<div class="section">
+    <h1>{{ data.mois }}</h1>
+    <div class="total-amount">{{ data.total }}</div>
+    <button class="add-button">+</button>
+    <div class="expense-list">
+        {% for categorie in data.categories %}
+        <div class="expense-item">
+            {{ categorie.nom }}<br>{{ categorie.montant }}
+            <button class="remove-button">-</button>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

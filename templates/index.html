@@ -1,10 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "base.html" %}
 
-</body>
-</html>
+{% block title %}Accueil{% endblock %}
+
+{% block content %}
+<div class="section">
+    <h1>MOIS</h1>
+    <div class="total-amount">1000,00 €</div>
+    <button class="add-button">+</button>
+    <div class="month-list">
+        <div class="month-item">Janvier<br>1525,25 €</div>
+        <div class="month-item">Février<br>1525,25 €</div>
+        <!-- Ajouter plus de mois si nécessaire -->
+    </div>
+</div>
+{% endblock %}
