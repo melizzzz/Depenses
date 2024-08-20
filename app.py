@@ -23,5 +23,4 @@ def mois_detail(mois):
     }
     return render_template('mois.html', data=data)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+
