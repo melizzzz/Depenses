@@ -1,0 +1,61 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.total-amount {
+    background: #b3e5fc;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.add-button, .remove-button {
+    background: #8bc34a;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.remove-button {
+    background: #f44336;
+}
+
+.month-list, .expense-list, .date-list {
+    margin-top: 20px;
+}
+
+.month-item, .expense-item, .date-item {
+    background: #ffeb3b;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
